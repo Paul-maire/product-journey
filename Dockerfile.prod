@@ -1,0 +1,21 @@
+FROM node:current-alpine
+
+WORKDIR /product-journey
+
+COPY package.json /product-journey
+COPY yarn.lock /product-journey
+
+ENV HOST 0.0.0.0
+ENV API https://product-journey.herokuapp.com/
+
+
+RUN yarn install
+COPY . /product-journey
+
+ENV NODE_ENV=production
+
+RUN yarn build
+
+EXPOSE 3000
+
+CMD ["yarn", "start"]
