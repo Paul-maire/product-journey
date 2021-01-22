@@ -1,0 +1,8 @@
+{
+  ideas {
+    id
+    title
+    content
+    votes_count
+  }
+}

@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-primary h-screen overflow-y-scroll w-screen p-12">
+  <div class="bg-primary h-screen overflow-y-scroll w-screen p-8 md:p-12  xl:p-24 ">
     <TopBar />
     <Nuxt />
   </div>
@@ -41,5 +41,12 @@ html {
 *::after {
   box-sizing: border-box;
   margin: 0;
+}
+
+.bg-concave {
+  background: linear-gradient(135deg, #E4E4E7 0%, #FCFCFF 100%);
+}
+.bg-convex {
+  background: linear-gradient(135deg, #FCFCFF 0%, #E4E4E7 100%);
 }
 </style>
