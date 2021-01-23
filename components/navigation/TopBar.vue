@@ -14,7 +14,7 @@
 <script>
 import New from '~/components/idea/New'
 import Account from '~/components/navigation/Account'
-import Search from '~/components/navigation/Search'
+import Search from '~/components/inputs/Search'
 
 export default {
   components: {
