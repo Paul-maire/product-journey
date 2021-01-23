@@ -1,0 +1,7 @@
+mutation saveIdea($idea: IdeaInput) {
+   saveIdea(idea: $idea) {
+      id
+      title
+      content
+   }
+}
