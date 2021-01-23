@@ -6,7 +6,6 @@ COPY package.json /product-journey
 COPY yarn.lock /product-journey
 
 ENV HOST 0.0.0.0
-ENV API 
 
 RUN yarn install
 COPY . /product-journey
