@@ -1,6 +1,6 @@
 <template>
-  <div class="w-full grid grid-cols-1 md:grid-cols-4 mb-16 md:mb-32">
-    <nuxt-link to="/" class="text-black tracking-wide text-2xl mx-auto md:mx-0 md:my-auto h-16 align-middle">💡 HIHAI</nuxt-link>
+  <div class="w-full h-fit grid grid-cols-1 md:grid-cols-4">
+    <nuxt-link to="/" class="text-black tracking-wide text-2xl mx-auto md:mx-0 h-16 align-middle flex items-center">💡 HIHAI</nuxt-link>
     <Search
       class="col-span-2 my-6 md:my-0"
     />

@@ -1,7 +1,7 @@
 <template>
-  <div class="grid grid-cols-3 gap-16">
-    <Expand class="col-span-2 overflow-scroll" />
-    <Conversation class="overflow-scroll" />
+  <div class="md:grid md:grid-cols-3 gap-4 md:gap-16">
+    <Expand class="h-64 md:h-auto md:col-span-2 overflow-scroll" />
+    <Conversation class="h-64 md:h-auto w-full my-12 md:my-0" />
   </div>
 </template>
 

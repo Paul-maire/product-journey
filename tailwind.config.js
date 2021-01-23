@@ -24,7 +24,15 @@ module.exports = {
     },
     backgroundImage: theme => ({
       account: "url('https://i.pravatar.cc/400')",
-    })
+    }),
+    extend: {
+      lineHeight: {
+        '12': '3rem'
+      },
+      height: {
+        'fit': 'fit-content'
+      }
+    }
   },
   variants: {},
   plugins: []
