@@ -1,17 +1,17 @@
 <template>
-  <div>
-    <Section />
-    <Section />
-    <Section />
-  </div>
+   <div>
+      <Section />
+      <Section />
+      <Section />
+   </div>
 </template>
 
 <script>
 import Section from '~/components/blocks/Section'
 
 export default {
-  components: {
-    Section
-  }
+   components: {
+      Section
+   }
 }
 </script>

@@ -1,9 +1,9 @@
-{
-  ideas {
-    id
-    title
-    content
-    vote
-    votes_count
-  }
+query GetIdeas{
+   ideas {
+      id
+      title
+      content
+      vote
+      votes_count
+   }
 }

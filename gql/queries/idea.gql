@@ -1,0 +1,14 @@
+query GetIdea($id: Int!) {
+   idea(id: $id) {
+      id
+      title
+      content
+      vote
+      votes_count
+
+      comments {
+         id
+         content
+      }
+   }
+}

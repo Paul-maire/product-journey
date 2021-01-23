@@ -1,10 +1,10 @@
 <template>
   <div
-    class="flex items-center justify-center shadow-convex bg-account bg-cover bg-contain text-3xl outline-none focus:outline-none cursor-pointer"
+    class="flex items-center justify-center shadow-convex bg-account bg-contain text-3xl outline-none focus:outline-none cursor-pointer"
     :class="{
-      'h-10 w-10 rounded-lg': small,
-      'h-12 w-12 rounded-xl': medium,
-      'h-16 w-16 rounded-2xl': large,
+      'h-10 w-10 rounded-full': small,
+      'h-12 w-12 rounded-full': medium,
+      'h-16 w-16 rounded-full': large,
     }"
   />
 </template>
