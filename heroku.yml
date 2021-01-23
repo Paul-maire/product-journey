@@ -1,6 +1,7 @@
 build:
    config:
       PORT: 3000
+      API: ${API}
    docker:
       web: Dockerfile.prod
 run:
