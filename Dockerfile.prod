@@ -8,7 +8,7 @@ COPY yarn.lock /product-journey
 EXPOSE $API
 
 ENV HOST 0.0.0.0
-ENV API $API
+ENV API ${API}
 
 RUN yarn install
 COPY . /product-journey
