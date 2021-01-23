@@ -5,8 +5,10 @@ WORKDIR /product-journey
 COPY package.json /product-journey
 COPY yarn.lock /product-journey
 
+EXPOSE $API
+
 ENV HOST 0.0.0.0
-ENV API 'https://product-journey-api.herokuapp.com/'
+ENV API $API
 
 RUN yarn install
 COPY . /product-journey
