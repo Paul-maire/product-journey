@@ -1,12 +1,12 @@
 <template>
-  <div class="bg-primary h-screen overflow-y-scroll w-screen p-8 md:p-12  xl:p-24 ">
-    <TopBar />
-    <Nuxt />
+  <div class="bg-primary h-screen overflow-y-scroll w-screen p-8 md:px-12 md:py-6 xl:px-24 xl:py-12 grid grid-cols-1 grid-rows-6">
+    <TopBar/>
+    <Nuxt class="row-span-5"/>
   </div>
 </template>
 
 <script>
-import TopBar from '~/components/TopBar'
+import TopBar from '~/components/navigation/TopBar'
 
 export default {
   components: {
