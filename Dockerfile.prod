@@ -2,13 +2,11 @@ FROM node:current-alpine
 
 WORKDIR /product-journey
 
-ARG API
-
 COPY package.json /product-journey
 COPY yarn.lock /product-journey
 
 ENV HOST 0.0.0.0
-ENV API $API
+ENV API 'https://product-journey-api.herokuapp.com/'
 
 RUN yarn install
 COPY . /product-journey
