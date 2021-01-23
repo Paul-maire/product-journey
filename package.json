@@ -12,6 +12,7 @@
   "dependencies": {
     "@nuxtjs/apollo": "^4.0.1-rc.5",
     "core-js": "^3.8.2",
+    "lodash": "^4.17.20",
     "nuxt": "^2.14.12"
   },
   "devDependencies": {
