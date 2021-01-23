@@ -37,8 +37,14 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/pwa',
     '@nuxtjs/apollo',
   ],
+
+  manifest: {
+		display: 'fullscreen',
+		theme_color: '#F0F0F3',
+	},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

@@ -1,5 +1,5 @@
 <template>
-  <nuxt-link to="/idea" class="bg-primary shadow-flat rounded-2xl p-8">
+  <nuxt-link to="/idea" class="bg-primary shadow-flat bg-contain rounded-2xl p-8">
     <div class="flex text-xl w-full justify-between items-center mb-4">
       <h2 class="text-black font-semibold text-base">{{idea.title}}</h2>
       <Vote

@@ -44,10 +44,10 @@ html {
 }
 
 .bg-concave {
-  background: linear-gradient(135deg, #E4E4E7 0%, #FCFCFF 100%);
+  background: linear-gradient(135deg, #E4E4E7 0%, #FCFCFF 100%) #E5E5E5;
 }
 .bg-convex {
-  background: linear-gradient(135deg, #FCFCFF 0%, #E4E4E7 100%);
+  background: linear-gradient(135deg, #FCFCFF 0%, #E4E4E7 100%) #E5E5E5;
 }
 
 .page-enter-active,

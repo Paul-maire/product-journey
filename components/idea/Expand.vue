@@ -1,5 +1,5 @@
 <template>
-  <div class="shadow-flat bg-primary rounded-2xl p-12 grid grid-cols-1 gird-rows-6">
+  <div class="shadow-flat bg-primary bg-contain rounded-2xl p-12 grid grid-cols-1 gird-rows-6">
     <div class="flex items-center mb-12">
       <Account />
       <span class="ml-8">Janne Doe have this idea 💡</span>

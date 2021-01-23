@@ -1,5 +1,5 @@
 <template>
-  <div class="shadow-concave bg-concave rounded-2xl px-12 pb-12 relative overflow-y-scroll flex flex-col-reverse">
+  <div class="shadow-concave bg-concave bg-contain rounded-2xl px-12 pb-12 relative overflow-y-scroll flex flex-col-reverse">
     <Comment class="sticky bottom-0 h-24 w-full rounded-xl" />
     <div class="h-full overflow-y-scroll pt-12">
       <Message />
