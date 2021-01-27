@@ -55,8 +55,8 @@ export default {
       clientConfigs: {
          default: {
             httpEndpoint: process.env.API,
-            wsEndpoint: 'ws://localhost:5000/graphql'
+            wsEndpoint: 'ws://0.0.0.0:5000/graphql'
          }
-      }
+      },
    }
 }

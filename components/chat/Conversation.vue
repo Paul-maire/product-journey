@@ -3,6 +3,7 @@
       <Comment
          class="sticky bottom-0 h-24 w-full rounded-xl"
          :idea_id="idea_id"
+         @submit="submit"
       />
       <div class="h-full overflow-y-scroll pt-12">
          <Message
@@ -19,6 +20,8 @@ import Message from '~/components/chat/Message'
 import Comment from '~/components/chat/Comment'
 
 import Comments from '~/gql/queries/comments'
+import CommentSaved from '~/gql/subscriptions/comment-saved'
+import SaveComment from '~/gql/mutations/save-comment'
 
 export default {
    props: {
@@ -35,6 +38,20 @@ export default {
                idea_id: this.idea_id
             }
          },
+         subscribeToMore: {
+            document: CommentSaved,
+            updateQuery: ({ comments }, { subscriptionData }) => comments.push(subscriptionData.data.commentAdded),
+         }
+      },
+   },
+   methods: {
+      submit(comment) {
+         this.$apollo.mutate({
+            mutation: SaveComment,
+            variables: {
+               comment,
+            },
+         })
       }
    },
    components: {

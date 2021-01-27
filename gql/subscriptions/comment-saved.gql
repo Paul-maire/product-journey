@@ -1,5 +1,5 @@
 subscription {
-   commentSaved {
+   commentAdded {
       id
       idea_id
       content

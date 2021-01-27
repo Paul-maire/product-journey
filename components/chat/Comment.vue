@@ -8,8 +8,6 @@
 </template>
 
 <script>
-import SaveComment from '~/gql/mutations/save-comment'
-
 export default {
    props: {
       idea_id: {
@@ -32,12 +30,7 @@ export default {
    },
    methods: {
       submit() {
-         this.$apollo.mutate({
-            mutation: SaveComment,
-            variables: {
-               comment: this.comment,
-            },
-         })
+         this.$emit('submit', this.comment)
       }
    },
 }
