@@ -8,7 +8,7 @@
       <Conversation
          class="h-64 md:h-auto w-full my-12 md:my-0"
          v-if="!$apollo.queries.idea.loading"
-         :conversation="idea.comments"
+         :idea_id="idea.id"
       />
    </div>
 </template>
@@ -28,8 +28,8 @@ export default {
             return {
                id: this.id
             }
-         }
-      }
+         },
+      },
    },
    components: {
       Expand,

@@ -3,5 +3,10 @@ mutation saveIdea($idea: IdeaInput) {
       id
       title
       content
+
+      comments {
+         id
+         content
+      }
    }
 }

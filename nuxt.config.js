@@ -24,6 +24,7 @@ export default {
 
    // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
    plugins: [
+      // '~/plugins/sub'
    ],
 
    // Auto import components: https://go.nuxtjs.dev/config-components
@@ -54,6 +55,7 @@ export default {
       clientConfigs: {
          default: {
             httpEndpoint: process.env.API,
+            wsEndpoint: 'ws://localhost:5000/graphql'
          }
       }
    }

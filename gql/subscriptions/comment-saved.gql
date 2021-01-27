@@ -1,0 +1,7 @@
+subscription {
+   commentSaved {
+      id
+      idea_id
+      content
+   }
+}

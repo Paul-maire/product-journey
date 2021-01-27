@@ -4,6 +4,6 @@ query GetIdeas{
       title
       content
       vote
-      votes_count
+      # votes_count
    }
 }

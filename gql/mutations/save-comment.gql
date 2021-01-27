@@ -1,0 +1,6 @@
+mutation saveComment($comment: CommentInput) {
+   saveComment(comment: $comment) {
+      id
+      content
+   }
+}

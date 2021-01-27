@@ -1,8 +1,6 @@
 <template>
    <div>
       <Section />
-      <Section />
-      <Section />
    </div>
 </template>
 

@@ -22,21 +22,23 @@ import Vote from '~/components/idea/Vote'
 import SaveIdea from '~/gql/mutations/save-idea'
 
 export default {
-   data: () => ({
-      idea: {
-         title: null,
-         content: null
+   data() {
+      return {
+         idea: {
+            title: null,
+            content: null
+         }
       }
-   }),
+   },
    methods: {
       async submit() {
+
          const result = await this.$apollo.mutate({
             mutation: SaveIdea,
             variables: {
                idea: this.idea,
             },
          }).catch(console.error)
-         console.log(result)
 
          if (result?.data?.saveIdea) return this.$router.push('/')
       }

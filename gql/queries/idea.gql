@@ -4,11 +4,5 @@ query GetIdea($id: Int!) {
       title
       content
       vote
-      votes_count
-
-      comments {
-         id
-         content
-      }
    }
 }
